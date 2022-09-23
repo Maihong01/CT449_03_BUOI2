@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/contacts", contactsRouter);
 
-// handle 404 response
+
 app.use((req, res, next) => {
     // Code ở đây sẽ chạy khi không có route được định nghĩa nào
     // khớp với yêu cầu. Gọi next() để chuyển sang middleware xử lý lỗi
